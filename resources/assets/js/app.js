@@ -15,28 +15,8 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
-Vue.component('chat-log', require('./components/ChatLog.vue'));
-Vue.component('chat-message', require('./components/ChatMessage.vue'));
-Vue.component('chat-composer', require('./components/ChatComposer.vue'));
+Vue.component('gallery-upload', require('./components/Gallery.vue'));
 
-const app = new Vue({
-    el: '#app',
-    data: {
-        messages: [
-            {
-                message: 'Hey!',
-                user: 'Nut Srabua'
-            },
-            {
-                message: 'Hello',
-                user: 'Nut Srabua'
-            }
-        ]
-    },
-    methods: {
-        addMessage(message) {
-            this.messages.push(message);
-        }
-    }
+const appgallery = new Vue({
+    el: '#appgallery',    
 });
